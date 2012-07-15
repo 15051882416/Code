@@ -1,0 +1,56 @@
+let twitvim_login = "chon219:mima"
+
+let Tlist_Use_Right_Window = 1
+let Tlist_File_Fold_Auto_Close = 1
+
+nnoremap <silent> <F8> :TlistToggle<CR>
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
+nnoremap <silent> <C-h> :tabprevious<CR>
+nnoremap <silent> <C-l> :tabNext<CR>
+
+"不兼容vi
+set nocompatible
+
+"显示当前光标位置
+set ruler
+
+"显示命令
+set showcmd
+
+"设置字符编码
+set encoding=utf-8
+
+"定义退格键
+set backspace=indent,eol,start
+
+"设置高亮
+syntax on
+
+"显示行号
+set number
+
+"搜索时不区分大小写
+set ignorecase
+
+"使用鼠标
+set mouse=a
+
+"设置备份目录 
+set backupdir=~/.vim/backup,/tmp
+
+"打开文件类型检测功能
+filetype on
+"根据监测的文件类型加载插件
+filetype plugin on
+"根据监测的文件类型选择缩进
+filetype indent on
+
+"Tab的长度为4个空格
+set tabstop=4
+set softtabstop=4
+"缩进长度
+set shiftwidth=4
+"将Tab转换为空格
+set expandtab
+"智能缩进
+set smartindent
