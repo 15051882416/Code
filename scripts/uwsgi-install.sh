@@ -61,7 +61,7 @@ WEBROOT=$webroot
 
 set -e
 do_start(){
-	uwsgi -s \$SOCKET -C 666 -M -p 5 -t 30 --limit-as 128 -R 10000 --vhost -d \$LOG --pidfile \$PIDFILE --pythonpath \$WEBROOT
+	uwsgi -s \$SOCKET -C 666 -M -p 5 -t 30 -R 10000 --vhost -d \$LOG --pidfile \$PIDFILE --pythonpath \$WEBROOT
 }
 do_stop(){
 	kill -2 \`cat -- \$PIDFILE\`
