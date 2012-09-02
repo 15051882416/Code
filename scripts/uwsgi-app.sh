@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 webroot="/home/wwwroot/"
-nginxvhost="/usr/local/nginx/conf/vhost/"
+nginxvhost="/etc/nginx/conf.d/"
 
 # Check if user is root
 if [ $(id -u) != "0" ]; then
